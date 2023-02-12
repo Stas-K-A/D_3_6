@@ -1,0 +1,6 @@
+{% extends 'default.html' %}
+{% load custom_filters %}
+{% block title %}
+<p>{{ news_detail.title|currency }} : {{ news_detail.date_creation|date:'d M Y' }}</p>
+<p>{{ news_detail.text|currency }} </p>
+{% endblock %}
